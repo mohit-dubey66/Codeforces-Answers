@@ -1,0 +1,29 @@
+// Link to the question: https://codeforces.com/problemset/problem/71/A
+
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    
+    int testcase;
+    cin >> testcase;
+    
+    while(testcase--){
+        
+        string word;
+        cin >> word;
+        
+        int size = word.length();
+
+        if(size > 10){
+            char first = word[0];
+            char last = word[size-1];
+        
+            cout << first << size-2 << last << endl;
+        }
+        else{
+            cout << word << endl;
+        }   
+    }
+    return 0;
+}
